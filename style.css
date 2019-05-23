@@ -1,0 +1,540 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+marquee {
+    background-color: #ed484c;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    display: flex;
+}
+.disc {
+    color: black;
+    font-weight: bold;
+    background-color: yellow;
+}
+header {
+    background-color: #4c4c4c;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    justify-content: space-between;
+    margin-top: 3px;
+    line-height: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+header a {
+    color: #bfbfbf;
+    font-weight: bold;
+    text-shadow: 0px 0px 1px #bfbfbf;
+}
+
+li a:hover {
+    color: #eee;
+
+}
+header ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+#menu li {
+    padding: 10px;
+    padding-right: 30px;
+}
+
+#logo {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+#logo img {
+    height: 35px;
+    padding-left: 40px;
+    margin-top: -10px;
+    color: black;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+}
+.intro {
+    background: url('images/floral.png');
+    font-family: 'source sans pro', sans-serif;
+    background-color: #f18d97;
+}
+
+.intro h1 {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+.intro {
+    text-align: center;
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techintro {
+    margin: 45px 0 25px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.join {
+    padding: 1em 4em;
+    background-color: #170d0e;
+    color: #f18d97;
+    border: none;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.join:hover {
+    background-color:whitesmoke;
+    color: black;
+    font-weight: bold;
+}
+.box-container {
+    background: url('images/floral.png');
+    font-family: 'Lobster Two', cursive;
+    background-color: #efece7;
+}
+.service-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+.box-description h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 50px;
+    padding-top: 25px;
+}
+
+i.fab.fa-html5 {
+    font-size: 150px;
+}
+.fab.fa-html5:hover{
+    color: red;
+}
+.fab.fa-css3 {
+    font-size: 150px;
+}
+
+
+i.fab.fa-css3:hover {
+    color: red;
+}
+
+i.fab.fa-js {
+    font-size: 150px;
+}
+
+i.fab.fa-js:hover {
+    color: red;
+}
+
+.service-description {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 16px;
+}
+.article {
+    padding: 0 15px 24px 15px;
+}
+.service-box {
+    padding: 0px 5px 0 5px;
+}
+#service-portfolio {
+    background: url(floral.png);
+    font-family: 'Lobster Two', cursive;
+    background-color: #ddceb4;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.portfolio-intro {
+    margin: 37px 0 27px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    padding: 17px;
+    font-size: 18px;
+    display: inline-block;
+    line-height: 20px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    border-width: 2px;
+}
+
+.portfolios {
+    display: flex;
+    padding: 10px;
+    width: 820px;
+}
+.portfoliopics-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfoliopics-container img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 209px;
+    height: 190px;
+    cursor: pointer;
+    border-radius: 3%;
+    margin: 10px;
+}
+figcaption h3 {
+    margin: 30px 15px;
+    font-family: serif !important;
+    font-size: 12px !important;
+}
+.icon span:hover {
+    background-color: white;
+}
+
+.icon span {
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 10px;
+}
+.icon i:hover {
+    color: black;
+}
+
+figure { position: relative;
+}
+
+figure img {
+    display: block;
+}
+figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: -0.5;
+    transition: .3s ease;
+    background-color: black;
+}
+
+figure:hover figcaption {
+    opacity: 0.8;
+    border-radius: 3%;
+}
+figure:hover {
+    margin: unset;
+}
+
+.icon {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.fa-user:hover {
+    color: #eee;
+}
+.contact-container {
+    background: url(images/floral.png);
+    font-family: 'Lobster Two', cursive;
+    background-color: #afc7c6;
+    text-align: center;
+}
+
+.contact-desc h2 {
+    margin: 0px 0px 20px;
+    padding: 27px;
+}
+
+.contact-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.socials {
+    margin: 3px 0 30px;
+}
+
+.socials span {
+    padding: 15px;
+    margin: 9px 9px 0px 9px;
+    border: 1px solid;
+    border-radius: 100%;
+    font-size: 35px;
+}
+
+.socials span:hover {
+    background-color: #212121;
+    color: #fcdea6;
+    border: none;
+}
+.socials span i:hover {
+    background-color: #212121;
+    color: #fcdea6;
+}
+.portfoliopics-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfoliopics-container img {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 209px;
+    height: 190px;
+    cursor: pointer;
+    border-radius: 3%;
+    margin: 10px;
+}
+figcaption h3 {
+    margin: 30px 15px;
+    font-family: serif !important;
+    font-size: 12px !important;
+}
+.icon span:hover {
+    background-color: white;
+}
+
+.icon span {
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 10px;
+}
+.icon i:hover {
+    color: black;
+}
+
+figure { position: relative;
+}
+
+figure img {
+    display: block;
+}
+figcaption {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: -0.5;
+    transition: .3s ease;
+    background-color: black;
+}
+
+figure:hover figcaption {
+    opacity: 0.8;
+    border-radius: 3%;
+}
+figure:hover {
+    margin: unset;
+}
+
+.icon {
+    text-decoration: none;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+.fa-user:hover {
+    color: #eee;
+}
+.contact-container {
+    background: url(images/floral.png);
+    font-family: 'Lobster Two', cursive;
+    background-color: #afc7c6;
+    text-align: center;
+}
+
+.contact-desc h2 {
+    margin: 0px 0px 20px;
+    padding: 27px;
+}
+
+.contact-services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.socials {
+    margin: 3px 0 30px;
+}
+
+.socials span {
+    padding: 15px;
+    margin: 9px 9px 0px 9px;
+    border: 1px solid;
+    border-radius: 100%;
+    font-size: 35px;
+}
+
+.socials span:hover {
+    background-color: #212121;
+    color: #fcdea6;
+    border: none;
+}
+.socials span i:hover {
+    background-color: #212121;
+    color: #fcdea6;
+}
+footer {
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    letter-spacing: 2px;
+    word-spacing: 1px;
+    font-family: 'Lobster Two', cursive;
+}
+footer:hover i {
+    color: red;
+}
+.portfoliopics-container img {
+    width: 231px;
+    height: 210px;
+}
+
+@media screen and (max-width:420px) {
+    header{
+        padding: 5px 0;
+    }
+    #logo img {
+        height: 30px;
+        padding-left: 30px;
+        margin-top: 0px;
+    }
+    #menu li {
+        padding: 0px;
+        padding-right: 28px;
+    }
+
+    .intro {
+        padding-top: 15px;
+    }
+    .techintro {
+        margin: 10px 0 24px;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 11px;
+    }
+    .box-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .service-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-intro {
+        margin: 15px 0 1px;
+        padding: 11px;
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        line-height: 9px;
+    }
+    .portfolios {
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfoliopics-container {
+        flex-direction: column;
+    }
+    .portfoliopics-container img {
+        width: 309px;
+        height: 220px;
+        border-radius: 6px;
+    }
+/* My Mobile Galazxy View */
+@media screen and (max-width: 370px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+    header a {
+        font-size: 14px;
+    }
+    #menu li {
+        padding-right: 11px;
+        font-size: 12px;
+    }
+    .intro h1 {
+        font-size: 2em;
+    }
+    #logo img {
+        height: 28px;
+        padding-left: 13px;
+    }
+    .techintro {
+        margin: 10px 0 24px;
+        padding: 8px;
+        font-size: 10px;
+        font-weight: bold;
+        line-height: 10px;
+    }
+    .join {
+        padding: 1em 2em;
+    }
+    .portfoliopics-container img {
+        width: 215px;
+        border-radius: 6px;
+    }
+    .socials span {
+        margin: 0px 7px 0px 9px;
+        font-size: 20px;
+    }
+    .contact-desc h2 {
+        margin: 0px 0px 5px;
+        padding: 20px;
+    }
+    .footer {
+        font-size: 10px;
+        font-family: serif;
+    }
